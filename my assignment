@@ -1,0 +1,16 @@
+work_hour = [('Ram',100),('Shyam',500),('Mohan',300),('Sohan',600)]
+def employee_check(work_hour):
+    employee_of_month = ''
+    current_max = 0
+    for employee,hours in work_hour:
+        if hours > current_max:
+            current_max = hours
+            employee_of_month = employee
+        else:
+            pass
+    return employee,current_max
+result = employee_check(work_hour)
+print(result)
+name, working_hours = employee_check(work_hour)
+print(name)
+print(working_hours)
